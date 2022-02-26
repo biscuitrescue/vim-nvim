@@ -30,37 +30,36 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'itchyny/lightline.vim'
-let g:lightline = {
-      \ 'colorscheme': 'palenight',
-      \ }
+" Plug 'itchyny/lightline.vim'
+" let g:lightline = {
+"       \ 'colorscheme': 'nord',
+"       \ }
 
 " lean & mean status/tabline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" " let g:airline_theme='palenight'
-" let g:airline_theme='dracula'
-" let g:airline_powerline_fonts = 1
-" let g:airline#extensions#tabline#enabled = 2
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+let g:airline_theme='dracula'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
-" if fancy_symbols_enabled
-"     let g:webdevicons_enable = 1
+if fancy_symbols_enabled
+    let g:webdevicons_enable = 1
 
-"     " custom airline symbols
-"     if !exists('g:airline_symbols')
-"        let g:airline_symbols = {}
-"     endif
-"     let g:airline_left_sep = ''
-"     let g:airline_left_alt_sep = ''
-"     let g:airline_right_sep = ''
-"     let g:airline_right_alt_sep = ''
-"     let g:airline_symbols.branch = '⭠'
-"     let g:airline_symbols.readonly = '⭤'
-"     let g:airline_symbols.linenr = '⭡'
-" else
-"     let g:webdevicons_enable = 0
-" endif
+    " custom airline symbols
+    if !exists('g:airline_symbols')
+       let g:airline_symbols = {}
+    endif
+    let g:airline_left_sep = "\uE0b4"
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = "\uE0b6"
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+else
+    let g:webdevicons_enable = 0
+endif 
 
 " emmet (like), essential toolkit for abbreviation expansion
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

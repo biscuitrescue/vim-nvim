@@ -46,7 +46,7 @@ nmap cll yiwocll<Esc>p
 " load plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 source ~/.config/nvim/plugins.vim
-source $HOME/.config/nvim/themes/onedark.vim
+" source $HOME/.config/nvim/themes/onedark.vim
 set background=dark
-" colorscheme dracula
+colorscheme dracula
 
