@@ -6,6 +6,7 @@ set number
 set tabstop=4
 set guifont=Space\ mono\ for\ powerline:h8
 set mouse=a
+set clipboard+=unnamedplus
 " set mouse=nicr
 
 " only vim can do this
