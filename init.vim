@@ -2,7 +2,7 @@ set encoding=UTF-8
 syntax on
 set number
 set tabstop=4
-set guifont=Space\ mono\ for\ powerline:h8
+set guifont=operator\ mono\ medium:h13
 set mouse=a
 set clipboard+=unnamedplus
 set cursorcolumn
@@ -31,7 +31,7 @@ nmap cll yiwocll<Esc>p
 
 " NEOVIDE
 let g:neovide_cursor_vfx_mode="torpedo"
-let g:neovide_transparency=0.6
+let g:neovide_transparency=1
 let g:neovide_fullscreen=v:false
 
 :nnoremap gb :bnext<CR>
