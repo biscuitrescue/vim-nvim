@@ -47,4 +47,4 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 set termguicolors
 source ~/.config/nvim/plugins.vim
 colorscheme catppuccin
-
+hi Normal ctermbg=NONE guibg=NONE
