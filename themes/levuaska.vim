@@ -73,4 +73,3 @@ hi link SpecialComment Special
 hi link Debug		Special
 hi link htmlTagName Special
 hi link djangoStatement Constant
-

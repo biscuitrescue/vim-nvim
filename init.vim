@@ -2,7 +2,8 @@ set encoding=UTF-8
 syntax on
 set number
 set tabstop=4
-set guifont=operator\ mono\ medium:h13
+set guifont=terminessttf\ nerd\ font\ mono:h15.5
+" set guifont=operator\ mono\ book:h12.5
 set mouse=a
 set clipboard+=unnamedplus
 set cursorcolumn
@@ -46,5 +47,5 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 set termguicolors
 source ~/.config/nvim/plugins.vim
-colorscheme catppuccin
+colorscheme dracula
 hi Normal ctermbg=NONE guibg=NONE
