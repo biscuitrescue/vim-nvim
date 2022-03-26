@@ -38,7 +38,7 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'itchyny/lightline.vim'
 let g:lightline = {
-      \ 'colorscheme': 'dracula',
+      \ 'colorscheme': 'catppuccin',
        \ }
 
 
@@ -76,6 +76,7 @@ Plug 'myusuf3/numbers.vim'
 Plug 'rbgrouleff/bclose.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'PotatoesMaster/i3-vim-syntax'
 
 call plug#end()
 
