@@ -2,8 +2,7 @@ set encoding=UTF-8
 syntax on
 set number
 set tabstop=4
-set guifont=terminessttf\ nerd\ font\ mono:h15.5
-" set guifont=operator\ mono\ book:h12.5
+set guifont=operatormono\ nerd\ font:h13
 set mouse=a
 set clipboard+=unnamedplus
 set cursorcolumn
@@ -47,5 +46,11 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 set termguicolors
 source ~/.config/nvim/plugins.vim
-colorscheme catppuccin
-hi Normal ctermbg=NONE guibg=NONE
+
+
+let g:tokyonight_style = "night"
+let g:tokyonight_italic_functions = 1
+let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
+
+colorscheme nord
+" hi Normal ctermbg=NONE guibg=NONE
