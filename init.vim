@@ -1,16 +1,27 @@
 set encoding=UTF-8
+set ignorecase
+set smartcase
 set laststatus=2
-syntax on
 set number
 set shiftwidth=4
 set tabstop=4
 set guifont=operatormono\ nerd\ font:h13
 set mouse=a
 set clipboard+=unnamedplus
-set cursorcolumn
+set scrolloff=3
+set sidescrolloff=3
 set noshowmode
-set relativenumber
+" set relativenumber
 set ruler
+set title
+set confirm
+set termguicolors
+set autoindent
+set expandtab
+set linebreak
+set wrap
+
+syntax on
 
 :tnoremap <Esc> <C-\><C-n>
 
@@ -50,7 +61,6 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
-set termguicolors
 source ~/.config/nvim/plugins.vim
 
 set statusline+=%#warningmsg#
@@ -66,31 +76,33 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" let g:airline_theme="palenight"
-" let g:airline_powerline_fonts = 1
-" let g:airline#extensions#tabline#enabled = 1
+" AIRLINE
 
-" if fancy_symbols_enabled
-"     let g:webdevicons_enable = 1
+let g:airline_theme="palenight"
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 2
 
-"     if !exists('g:airline_symbols')
-"         let g:airline_symbols = {}
-"     endif
-"     let g:airline_left_sep = "\uE0b4"
-"     let g:airline_left_alt_sep = ''
-"     let g:airline_right_sep = "\uE0b6"
-"     let g:airline_right_alt_sep = ''
-"     let g:airline_symbols.branch = '⭠'
-"     let g:airline_symbols.readonly = '⭤'
-"     let g:airline_symbols.linenr = '⭡'
-" else
-"     let g:webdevicons_enable = 0
-" endif
+if fancy_symbols_enabled
+    let g:webdevicons_enable = 1
 
-let g:aquarium_style="dark"
-let g:lightline = {
-    \ 'colorscheme': 'palenight',
-     \ }
+    if !exists('g:airline_symbols')
+        let g:airline_symbols = {}
+    endif
+    let g:airline_left_sep = "\uE0b4"
+    let g:airline_left_alt_sep = ''
+    let g:airline_right_sep = "\uE0b6"
+    let g:airline_right_alt_sep = ''
+    let g:airline_symbols.branch = '⭠'
+    let g:airline_symbols.readonly = '⭤'
+    let g:airline_symbols.linenr = '⭡'
+else
+    let g:webdevicons_enable = 0
+endif
+
+" let g:lightline = {
+            " \ 'colorscheme': 'palenight',
+            "  \ }
 
 " hi Normal ctermbg=NONE guibg=NONE
+
 colorscheme palenight

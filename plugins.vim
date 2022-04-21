@@ -13,11 +13,11 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 
-Plug 'itchyny/lightline.vim'
+" Plug 'itchyny/lightline.vim'
 
 " Plug 'xavierd/clang_complete'
 Plug 'mattn/emmet-vim'
@@ -51,11 +51,12 @@ Plug 'mileszs/ack.vim'
 
 " THEMES
 
+Plug 'sonph/onehalf', { 'rtp': 'vim' }
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'frenzyexists/aquarium-vim', { 'branch': 'develop' }
+Plug 'ellisonleao/gruvbox.nvim'
 
 Plug 'zah/nim.vim'
 Plug 'vim-python/python-syntax'
