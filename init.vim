@@ -11,7 +11,6 @@ set clipboard+=unnamedplus
 set scrolloff=3
 set sidescrolloff=3
 set noshowmode
-" set relativenumber
 set ruler
 set title
 set confirm
@@ -78,7 +77,7 @@ let g:syntastic_check_on_wq = 0
 
 " AIRLINE
 
-let g:airline_theme="palenight"
+let g:airline_theme="dracula"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 2
 
@@ -99,10 +98,8 @@ else
     let g:webdevicons_enable = 0
 endif
 
-" let g:lightline = {
-            " \ 'colorscheme': 'palenight',
-            "  \ }
+let g:lightline = {'colorscheme': 'catppuccin'}
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-colorscheme palenight
+colorscheme dracula

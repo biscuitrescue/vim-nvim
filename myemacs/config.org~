@@ -1,0 +1,120 @@
+#+TITLE: My Emacs Config
+#+AUTHOR: Karttikeya Sinha
+
+* PACKAGE MANAGEMENT
+** Setup package.el to work with MELPA.
+
+#+begin_src emacs-lisp
+  (require 'package)
+  (add-to-list 'package-archives
+	       '("melpa" . "https://melpa.org/packages/"))
+  (package-refresh-contents)
+  (package-initialize)
+
+#+end_src
+
+** Installing use package
+
+#+begin_src emacs-lisp
+  (unless (package-installed-p 'use-package)
+    (package-install 'use-package))
+
+#+end_src
+
+* GENERAL KEYBINDINGS
+
+#+begin_src emacs-lisp
+    (use-package general
+  ;;  :ensure t
+    :config
+    (general-evil-setup t))
+
+    (nvmap :prefix "SPC"
+    "SPC" '(counsel-M-x :which-key "M-x")
+    "."       '(find-file :which-key "Find file")
+    "w v"     '(evil-window-vsplit :which-key "Vertical split")
+    "w s"     '(evil-window-split :which-key "horizontal split")
+    "w q"     '(evil-window-delete :which-key "Close window")
+    "f s"     '(evil-update :which-key "Save file")
+    "h r r"   '((lambda () (interactive) (load-file "~/.emacs.d/init.el")) :which-key "Reload config"))
+#+end_src
+
+* Evil Mode
+
+#+begin_src emacs-lisp
+  (use-package evil
+;;	       :ensure t
+	       :init
+	       (setq evil-want-integration t)
+	       (setq evil-want-keybinding nil)
+	       (setq evil-vsplit-window-right t)
+	       (setq evil-split-window-below t)
+	       (evil-mode))
+  (use-package evil-collection
+;;	       :after evil
+	       :ensure t
+	       :config
+	       (evil-collection-init))
+
+#+end_src
+
+* FONTS
+
+#+begin_src emacs-lisp
+  (set-face-attribute 'default nil
+  :font "space mono for powerline 13" 
+  :weight 'medium)
+  (set-face-attribute 'fixed-pitch nil
+  :font "space mono for powerline 13" 
+  :weight 'medium)
+  ;; (setq-default line-spacing 0.10)
+  (add-to-list 'default-frame-alist '(font . "space mono for powerline 13"))
+
+#+end_src
+
+** ZOOM
+#+begin_src emacs-lisp
+  (global-set-key (kbd "C-=") 'text-scale-increase)
+  (global-set-key (kbd "C-+") 'text-scale-increase)
+  (global-set-key (kbd "C--") 'text-scale-decrease)
+#+end_src
+
+* GUI Settings
+** Disabled menu, toolbar, scrollbar
+
+#+begin_src emacs-lisp
+  (menu-bar-mode -1)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
+  
+#+end_src
+
+#+begin_src emacs-lisp
+  (global-display-line-numbers-mode 1)
+  (global-visual-line-mode 1)
+  (setq display-line-numbers-type 'relative)
+
+
+#+end_src
+* THEMES
+#+begin_src emacs-lisp
+  (use-package doom-themes)
+;;  :ensure t)
+  (setq doom-themes-enable-bolt t
+  doom-themes-enable-italic t)
+  (load-theme 'doom-palenight t)
+
+#+end_src
+** MODELINE
+#+begin_src emacs-lisp
+  (use-package doom-modeline)
+  ;; :ensure t)
+  (doom-modeline-mode 1)
+#+end_src
+
+* Which Key
+#+begin_src emacs-lisp
+  (use-package which-key)
+;;  :ensure t)
+  (which-key-mode)
+#+end_src

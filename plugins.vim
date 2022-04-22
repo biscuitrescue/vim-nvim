@@ -28,16 +28,16 @@ let g:user_emmet_settings = {
 \    'quote_char': "'",
 \  },
 \}
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" function! s:check_back_space() abort
-"   let col = col('.') - 1
-"   return !col || getline('.')[col - 1]  =~ '\s'
-"
-" endfunction
-" inoremap <silent><expr> <Tab>
-"       \ pumvisible() ? "\<C-n>" :
-"       \ <SID>check_back_space() ? "\<Tab>" :
-"       \ coc#refresh()
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+function! s:check_back_space() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+
+endfunction
+inoremap <silent><expr> <Tab>
+    \ pumvisible() ? "\<C-n>" :
+     \ <SID>check_back_space() ? "\<Tab>" :
+      \ coc#refresh()
 
 Plug 'Shougo/deoplete.nvim'
 Plug 'sudar/vim-arduino-syntax'
