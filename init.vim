@@ -77,7 +77,7 @@ let g:syntastic_check_on_wq = 0
 
 " AIRLINE
 
-let g:airline_theme="palenight"
+let g:airline_theme="dracula"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 2
 
@@ -102,4 +102,4 @@ let g:lightline = {'colorscheme': 'catppuccin'}
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-colorscheme palenight
+colorscheme dracula
