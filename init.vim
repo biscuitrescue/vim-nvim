@@ -102,4 +102,4 @@ let g:lightline = {'colorscheme': 'catppuccin'}
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-colorscheme catppuccin
+colorscheme dracula
