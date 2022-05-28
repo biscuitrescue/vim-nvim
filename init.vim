@@ -1,3 +1,5 @@
+"" Karttikeya's config
+
 set encoding=UTF-8
 set ignorecase
 set smartcase
@@ -77,7 +79,7 @@ let g:syntastic_check_on_wq = 0
 
 " AIRLINE
 
-let g:airline_theme="dracula"
+let g:airline_theme="palenight"
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 2
 
@@ -98,8 +100,18 @@ else
     let g:webdevicons_enable = 0
 endif
 
-let g:lightline = {'colorscheme': 'catppuccin'}
+let g:lightline = {'colorscheme': 'everblush'}
+
+lua << END
+require('lualine').setup{
+options = { 
+    theme = 'catppuccin',
+    section_separators = { left = '', right = '' },
+    component_separators = { left = '', right = '' },
+    }
+}
+END
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-colorscheme dracula
+colorscheme catppuccin
