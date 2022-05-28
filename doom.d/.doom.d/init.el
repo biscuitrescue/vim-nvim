@@ -22,8 +22,8 @@
        :completion
        company           ; the ultimate code completion backend
        ;; helm              ; the *other* search engine for love and life
-       ;; ido               ; the other *other* search engine...
-       ivy               ; a search engine for love and life
+       ido               ; the other *other* search engine...
+       ;; ivy               ; a search engine for love and life
        vertico           ; the search engine of the future
 
        :ui
@@ -145,7 +145,7 @@
        ;;latex             ; writing papers in Emacs has never been so fun
        ;;lean              ; for folks with too much to prove
        ;;ledger            ; be audit you can be
-       ;;lua               ; one-based indices? one-based indices
+       lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
        nim               ; python + lisp at the speed of c
        ;;nix               ; I hereby declare "nix geht mehr!"
