@@ -57,7 +57,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'Everblush/everblush.nvim', { 'as': 'everblush' }
-
+Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'mangeshrex/everblush.vim'
 
 Plug 'zah/nim.vim'
