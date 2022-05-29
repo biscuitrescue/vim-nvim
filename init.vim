@@ -105,7 +105,7 @@ let g:lightline = {'colorscheme': 'everblush'}
 lua << END
 require('lualine').setup{
 options = { 
-    theme = 'everblush',
+    theme = 'palenight',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     }
@@ -114,4 +114,4 @@ END
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-colorscheme everblush
+colorscheme palenight
