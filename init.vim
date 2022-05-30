@@ -105,7 +105,7 @@ let g:lightline = {'colorscheme': 'everblush'}
 lua << END
 require('lualine').setup{
 options = { 
-    theme = 'palenight',
+    theme = 'catppuccin',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     }
@@ -114,4 +114,5 @@ END
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-colorscheme palenight
+let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
+colorscheme catppuccin
