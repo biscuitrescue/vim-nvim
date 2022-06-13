@@ -53,14 +53,19 @@ let g:neovide_transparency=0.8
 let g:neovide_fullscreen=v:false
 
 :nnoremap gb :bnext<CR>
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
+" nnoremap <leader>n :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTree<CR>
+" nnoremap <C-t> :NERDTreeToggle<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+nnoremap <leader>t :BufferLineCycleNext<CR>
+nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <leader>r :NvimTreeRefresh<CR>
+nnoremap <leader>n :NvimTreeFindFile<CR>
+
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | | endif
+" autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 source ~/.config/nvim/plugins.vim
 
@@ -77,30 +82,12 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-" AIRLINE
-
-let g:airline_theme="palenight"
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 2
-
-if fancy_symbols_enabled
-    let g:webdevicons_enable = 1
-
-    if !exists('g:airline_symbols')
-        let g:airline_symbols = {}
-    endif
-    let g:airline_left_sep = "\uE0b4"
-    let g:airline_left_alt_sep = ''
-    let g:airline_right_sep = "\uE0b6"
-    let g:airline_right_alt_sep = ''
-    let g:airline_symbols.branch = '⭠'
-    let g:airline_symbols.readonly = '⭤'
-    let g:airline_symbols.linenr = '⭡'
-else
-    let g:webdevicons_enable = 0
-endif
-
 let g:lightline = {'colorscheme': 'everblush'}
+
+
+lua << END
+require'nvim-tree'.setup {}
+END
 
 lua << END
 require('lualine').setup{
@@ -110,9 +97,12 @@ options = {
     component_separators = { left = '', right = '' },
     }
 }
+
+require("bufferline").setup{}
+
 END
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-let g:catppuccin_flavour = "macchiato" " latte, frappe, macchiato, mocha
+let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
 colorscheme catppuccin

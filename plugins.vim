@@ -3,12 +3,15 @@
 call plug#begin('~/.nvim/plugged')
 
 Plug 'sheerun/vim-polyglot'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+" Plug 'scrooloose/nerdtree'
+" Plug 'Xuyuanp/nerdtree-git-plugin'
 
-let fancy_symbols_enabled = 1
-Plug 'ryanoasis/vim-devicons'
-let g:webdevicons_enable_nerdtree = 1
+Plug 'kyazdani42/nvim-tree.lua'
+
+" let fancy_symbols_enabled = 1
+" Plug 'ryanoasis/vim-devicons'
+" let g:webdevicons_enable_nerdtree = 1
+
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
@@ -17,6 +20,7 @@ Plug 'airblade/vim-gitgutter'
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'itchyny/lightline.vim'
 
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 
