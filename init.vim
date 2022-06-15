@@ -7,7 +7,7 @@ set laststatus=2
 set number
 set shiftwidth=4
 set tabstop=4
-set guifont=operatormono\ nerd\ font:h13
+set guifont=jetbrainsmono\ nerd\ font:h9
 set mouse=a
 set clipboard+=unnamedplus
 set scrolloff=3
@@ -49,7 +49,7 @@ nmap cll yiwocll<Esc>p
 
 " NEOVIDE
 let g:neovide_cursor_vfx_mode="torpedo"
-let g:neovide_transparency=0.8
+let g:neovide_transparency=1
 let g:neovide_fullscreen=v:false
 
 :nnoremap gb :bnext<CR>
@@ -92,7 +92,7 @@ END
 lua << END
 require('lualine').setup{
 options = { 
-    theme = 'catppuccin',
+    theme = 'palenight',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     }
@@ -104,5 +104,5 @@ END
 
 " hi Normal ctermbg=NONE guibg=NONE
 
-let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
-colorscheme catppuccin
+let g:catppuccin_flavour = "palenight" " latte, frappe, macchiato, mocha
+colorscheme palenight

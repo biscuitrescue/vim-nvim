@@ -62,7 +62,7 @@ Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'dracula/vim', { 'as': 'dracula' }
 " Plug 'Everblush/everblush.nvim', { 'as': 'everblush' }
 Plug 'NTBBloodbath/doom-one.nvim'
-Plug 'mangeshrex/everblush.vim'
+Plug 'rebelot/kanagawa.nvim'
 
 Plug 'zah/nim.vim'
 Plug 'vim-python/python-syntax'
@@ -72,6 +72,7 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'PotatoesMaster/i3-vim-syntax'
+Plug 'neovim/nvim-lspconfig', { 'tag': 'v0.1.3' }
 
 call plug#end()
 
