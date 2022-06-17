@@ -3,29 +3,24 @@
 call plug#begin('~/.nvim/plugged')
 
 Plug 'sheerun/vim-polyglot'
-" Plug 'scrooloose/nerdtree'
-" Plug 'Xuyuanp/nerdtree-git-plugin'
-
 Plug 'kyazdani42/nvim-tree.lua'
-
-" let fancy_symbols_enabled = 1
-" Plug 'ryanoasis/vim-devicons'
-" let g:webdevicons_enable_nerdtree = 1
-
 Plug 'editorconfig/editorconfig-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'itchyny/lightline.vim'
-
+Plug 'Vimjas/vim-python-pep8-indent'  
+Plug 'majutsushi/tagbar' 
+Plug 'w0rp/ale'  
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-
-" Plug 'xavierd/clang_complete'
 Plug 'mattn/emmet-vim'
+Plug 'davidhalter/jedi-vim'
+Plug 'roxma/nvim-yarp'  " dependency of ncm2
+Plug 'ncm2/ncm2'  " awesome autocomplete plugin
+Plug 'ncm2/ncm2-bufword'  " buffer keyword completion
+Plug 'Shougo/deoplete.nvim'
+Plug 'zchee/deoplete-clang'
+
 let g:user_emmet_leader_key=','
 let g:user_emmet_settings = {
 \  'javascript' : {
@@ -46,7 +41,6 @@ inoremap <silent><expr> <Tab>
 
 Plug 'Shougo/deoplete.nvim'
 Plug 'sudar/vim-arduino-syntax'
-" Plug 'vim-cpp-enhanced-highlight'
 Plug 'nikvdp/neomux'
 Plug 'vim-jp/vim-cpp'
 Plug 'vim-syntastic/syntastic'
@@ -60,9 +54,6 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'dracula/vim', { 'as': 'dracula' }
-" Plug 'Everblush/everblush.nvim', { 'as': 'everblush' }
-Plug 'NTBBloodbath/doom-one.nvim'
-Plug 'rebelot/kanagawa.nvim'
 
 Plug 'zah/nim.vim'
 Plug 'vim-python/python-syntax'
