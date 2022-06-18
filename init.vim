@@ -95,8 +95,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:lightline = {'colorscheme': 'everblush'}
-
 " ale options {{{
 let g:ale_python_flake8_options = '--ignore=E129,E501,E302,E265,E241,E305,E402,W503'
 let g:ale_python_pylint_options = '-j 0 --max-line-length=120'
