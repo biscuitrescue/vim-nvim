@@ -30,7 +30,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 map <C-t> :set nosplitright<CR>:TagbarToggle<CR>:set splitright<CR>
 map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
 map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
-map ,s :split <C-R>=expand("%:p:h") . "/" <CR>
+map ,s :vsplit <C-R>=expand("%:p:h") . "/" <CR>
 
 set wrap
 fun! JumpToDef()
