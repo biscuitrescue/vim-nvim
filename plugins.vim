@@ -54,6 +54,8 @@ Plug 'drewtempelmeyer/palenight.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'dracula/vim', { 'as': 'dracula' }
+" Plug 'romgrk/doom-one.vim'
+Plug 'NTBBloodbath/doom-one.nvim'
 
 Plug 'zah/nim.vim'
 Plug 'vim-python/python-syntax'

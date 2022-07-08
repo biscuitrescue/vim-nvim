@@ -158,4 +158,4 @@ END
 " hi Normal ctermbg=NONE guibg=NONE
 
 let g:catppuccin_flavour = "mocha" " latte, frappe, macchiato, mocha
-colorscheme dracula
+colorscheme catppuccin
