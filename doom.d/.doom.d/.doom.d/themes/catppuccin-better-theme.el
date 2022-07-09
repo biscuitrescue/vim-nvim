@@ -35,7 +35,7 @@ determine the exact padding."
   :type '(choice integer boolean))
 
 ;;
-(def-doom-theme mocha
+(def-doom-theme catppuccin-better
   "A dark theme based on Dracula theme"
 
   ;; name        default   256       16
