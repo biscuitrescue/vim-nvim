@@ -33,7 +33,7 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'mocha)
-(setq doom-font (font-spec :family "M PLUS 1 code" :size 24))
+(setq doom-font (font-spec :family "M PLUS 1 code" :size 25))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -51,6 +51,22 @@
 (use-package catppuccin-theme
   :config
   (setq catppuccin-height-title1 1.5))
+
+;; (setq racer-rust-src-path
+;;       (concat (string-trim
+;;                (shell-command-to-string "rustc --print sysroot"))
+;;               "/lib/rustlib/src/rust/src"))
+;;
+(setq racer-rust-src-path "/home/cafo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library")
+;; (use-package racer
+;;   :requires rust-mode
+
+;;   :init (setq racer-rust-src-path "/home/cafo/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/library")
+
+;;   :config
+;;   (add-hook 'rust-mode-hook #'racer-mode)
+;;   (add-hook 'racer-mode-hook #'eldoc-mode)
+;;   (add-hook 'racer-mode-hook #'company-mode))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
