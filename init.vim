@@ -145,7 +145,7 @@ END
 lua << END
 require('lualine').setup{
 options = { 
-    theme = 'auto',
+    theme = 'palenight',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     }
@@ -155,7 +155,7 @@ require("bufferline").setup{}
 
 END
 
-" hi Normal ctermbg=NONE guibg=NONE
 
-let g:catppuccin_flavour = "mocha"
-colorscheme catppuccin
+let g:catppuccin_flavour = "macchiato"
+colorscheme dracula
+hi Normal ctermbg=NONE guibg=NONE
