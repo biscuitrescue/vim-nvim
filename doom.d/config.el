@@ -32,7 +32,7 @@
 ;; There are two way to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'purple)
+(setq doom-theme 'doom-palenight)
 (setq doom-font (font-spec :family "M PLUS 1 code" :size 25))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
@@ -48,9 +48,9 @@
 ;; change `org-directory'. It must be set before org loads!
 (setq org-directory "~/org/")
 
-(use-package catppuccin-theme
-  :config
-  (setq catppuccin-height-title1 1.5))
+;; (use-package catppuccin-theme
+;;   :config
+;;   (setq catppuccin-height-title1 1.5))
 
 ;; (setq racer-rust-src-path
 ;;       (concat (string-trim

@@ -156,6 +156,6 @@ require("bufferline").setup{}
 END
 
 
-let g:catppuccin_flavour = "mocha"
+let g:catppuccin_flavour = "macchiato"
 colorscheme palenight
 hi Normal ctermbg=NONE guibg=NONE

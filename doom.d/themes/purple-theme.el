@@ -60,7 +60,7 @@ Can be an integer to determine the exact padding."
    (type           yellow)
    (strings        green)
    (variables      (doom-lighten red 0.3))
-   (numbers        violet)
+   (numbers        magenta)
    (region         `(,(car base3) ,@(cdr base1)))
    (error          red)
    (warning        yellow)
