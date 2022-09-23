@@ -10,7 +10,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Vimjas/vim-python-pep8-indent'  
 Plug 'majutsushi/tagbar' 
 Plug 'w0rp/ale'  
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+" Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'mattn/emmet-vim'

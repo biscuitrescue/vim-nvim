@@ -71,7 +71,7 @@ let g:neovide_fullscreen=v:false
 " nnoremap <C-t> :NERDTreeToggle<CR>
 " nnoremap <C-f> :NERDTreeFind<CR>
 
-nnoremap <leader>t :BufferLineCycleNext<CR>
+" nnoremap <leader>t :BufferLineCycleNext<CR>
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
@@ -145,17 +145,17 @@ END
 lua << END
 require('lualine').setup{
 options = { 
-  theme = 'auto',
+  theme = 'catppuccin',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     }
 }
 
-require("bufferline").setup{}
+-- require("bufferline").setup{}
 
 END
 
 
-let g:catppuccin_flavour = "macchiato"
-colorscheme palenight
+let g:catppuccin_flavour = "frappe"
+colorscheme catppuccin
 hi Normal ctermbg=NONE guibg=NONE
