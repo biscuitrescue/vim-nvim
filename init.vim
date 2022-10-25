@@ -145,7 +145,7 @@ END
 lua << END
 require('lualine').setup{
 options = { 
-  theme = 'catppuccin',
+  theme = 'auto',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     }
@@ -155,7 +155,7 @@ options = {
 
 END
 
-
+set background=dark
 let g:catppuccin_flavour = "frappe"
-colorscheme catppuccin
+colorscheme everforest
 hi Normal ctermbg=NONE guibg=NONE

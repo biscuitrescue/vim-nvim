@@ -55,6 +55,9 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'catppuccin/nvim', {'as': 'catppuccin'}
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'NTBBloodbath/doom-one.nvim'
+Plug 'ellisonleao/gruvbox.nvim'
+Plug 'sainnhe/everforest'
+
 
 Plug 'zah/nim.vim'
 Plug 'vim-python/python-syntax'
