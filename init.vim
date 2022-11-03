@@ -153,9 +153,11 @@ options = {
 
 -- require("bufferline").setup{}
 
+require("catppuccin").setup {
+    flavour = "latte" -- mocha, macchiato, frappe, latte
+}
+
 END
 
-set background=dark
-let g:catppuccin_flavour = "frappe"
 colorscheme everforest
 hi Normal ctermbg=NONE guibg=NONE
