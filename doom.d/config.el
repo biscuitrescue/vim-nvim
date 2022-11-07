@@ -32,7 +32,7 @@
 ;; There are two way to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'everforest)
+(setq doom-theme 'mocha)
 (setq doom-font (font-spec :family "iosevka" :size 28))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
