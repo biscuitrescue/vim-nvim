@@ -154,10 +154,10 @@ options = {
 -- require("bufferline").setup{}
 
 require("catppuccin").setup {
-    flavour = "latte" -- mocha, macchiato, frappe, latte
+    flavour = "mocha"
 }
 
 END
 
-colorscheme everforest
-hi Normal ctermbg=NONE guibg=NONE
+colorscheme catppuccin
+" hi Normal ctermbg=NONE guibg=NONE
