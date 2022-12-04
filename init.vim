@@ -160,4 +160,4 @@ require("catppuccin").setup {
 END
 
 colorscheme catppuccin
-" hi Normal ctermbg=NONE guibg=NONE
+hi Normal ctermbg=NONE guibg=NONE
