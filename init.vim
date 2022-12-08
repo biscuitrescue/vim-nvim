@@ -99,10 +99,10 @@ options = {
 -- require("bufferline").setup{}
 
 require("catppuccin").setup {
-    flavour = "latte"
+    flavour = "mocha"
 }
 
 END
 
-colorscheme catppuccin
+colorscheme dracula
 hi Normal ctermbg=NONE guibg=NONE
