@@ -7,7 +7,7 @@ set laststatus=2
 set number
 set shiftwidth=4
 set tabstop=4
-set guifont=jetbrainsmono\ nerd\ font:h9
+set guifont=M\ Plus\ 1\ Code\ Medium:h13
 set mouse=a
 set clipboard+=unnamedplus
 set scrolloff=3
@@ -99,10 +99,10 @@ options = {
 -- require("bufferline").setup{}
 
 require("catppuccin").setup {
-    flavour = "mocha"
+    flavour = "macchiato"
 }
 
 END
 
-colorscheme dracula
-hi Normal ctermbg=NONE guibg=NONE
+colorscheme palenight
+" hi Normal ctermbg=NONE guibg=NONE
