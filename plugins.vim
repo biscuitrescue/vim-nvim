@@ -63,6 +63,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'NTBBloodbath/doom-one.nvim'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'sainnhe/everforest'
+Plug 'rose-pine/neovim', { 'as': 'rose-pine' }
 
 set termguicolors     " enable true colors support
 

@@ -97,12 +97,15 @@ options = {
 }
 
 -- require("bufferline").setup{}
+require('rose-pine').setup({
+    dark_variant='moon'
+})
 
 require("catppuccin").setup {
-    flavour = "macchiato"
+    flavour = "latte"
 }
 
 END
 
-colorscheme palenight
+colorscheme catppuccin
 " hi Normal ctermbg=NONE guibg=NONE
