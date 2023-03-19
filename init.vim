@@ -103,7 +103,7 @@ require("catppuccin").setup {
     flavour = "frappe"
 }
 END
-colorscheme dracula
+colorscheme doom-one
 lua << END
 vim.api.nvim_set_hl(0, 'Comment', { italic=true })
 vim.cmd("hi Comment guifg=darkgrey")
