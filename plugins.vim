@@ -25,7 +25,7 @@ Plug 'zchee/deoplete-clang'
 Plug 'sudar/vim-arduino-syntax'
 Plug 'nikvdp/neomux'
 Plug 'vim-jp/vim-cpp'
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 Plug 'vim-scripts/auto-pairs-gentle'
 Plug 'tpope/vim-commentary'
 

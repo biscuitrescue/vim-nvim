@@ -16,7 +16,7 @@ set noshowmode
 set ruler
 set title
 set confirm
-" set termguicolors
+set termguicolors
 set autoindent
 set expandtab
 set statusline+=%#warningmsg#
@@ -85,6 +85,7 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 
 source ~/.config/nvim/plugins.vim
 
+colorscheme catppuccin
 
 lua << END
 require('lualine').setup{
@@ -94,18 +95,17 @@ options = {
     component_separators = { left = '', right = '' },
     }
 }
+
 -- require("bufferline").setup{}
 require('rose-pine').setup({
     dark_variant='moon'
 })
 
 require("catppuccin").setup {
-    flavour = "frappe"
+    flavour = "latte"
 }
-END
-colorscheme dracula
-lua << END
+
 vim.api.nvim_set_hl(0, 'Comment', { italic=true })
 vim.cmd("hi Comment guifg=darkgrey")
-vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+
 END
